@@ -1,0 +1,479 @@
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Rambla', sans-serif;
+    background-color: #ECECEC;
+    height: 100%;
+    position: relative;
+}
+
+/* Style the header */
+header {
+    
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #000000;
+}
+
+
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    background: #ECECEC;
+    padding: 20px;
+    color: #000000;
+    position: fixed;
+    
+}
+
+a {
+    color: #000000;
+}
+
+@media (min-width: 576px){}
+.navbar-expand-sm {
+    position: fixed;
+}
+
+.navbar{
+    position: sticky;
+}
+
+/* .navbar-nav{
+    margin: auto;
+    
+    display: inline;
+    display: block;
+} */
+
+.top-right-links {
+    position: relative;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ECECEC;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: white;
+  }
+
+
+.col-sm-4 {
+    margin: auto;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    /* position: fixed; */
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    font-family: 'Rambla', sans-serif;
+    /* left: 650px; */
+   
+}
+
+li {
+    display: inline;
+}
+
+
+article {
+    padding: 20px;
+    background-color: #f1f1f1;
+    /* height: 300px;  only for demonstration, should be removed */
+}
+
+/* Style the footer  was b/ground 777 */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+        padding-right: 100px;
+        padding-left: 100px;
+        
+    }
+}
+
+
+
+h2, .h2 {
+  color: #fcfcfc;
+  font-family: 'Rambla', sans-serif;
+}
+
+/* Style the list inside the menu */
+/* unvisited link */
+nav a:link {
+    color: #000000;
+    padding-right: 70px;
+    padding-left: 70px;
+    
+}
+
+.logo {
+    position: relative;
+    margin: 0.1%;
+}
+
+/* visited link */
+nav a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: #0a3373;
+}
+
+/* selected link */
+nav a:active {
+    color: #0a3373;
+    background-color: ECECEC;
+}
+
+
+/* updating the button */
+.btn btn-warning {
+	background-color: #FF9F41;
+	color: #fcfcfc;
+}
+
+.jumbotron  {
+    background-color: #ECECEC;
+    font-family: 'Rambla', sans-serif;
+}
+
+#main-hello {
+    
+    font-size: 60px;
+}
+
+.main-description-font {
+    font-size: 30px;
+    
+}
+
+
+/* fade animation from this website https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+.fade {
+    
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+@keyframes fadeInAnimationTwo { 
+    from { opacity:0; } 
+    to { opacity:1; } }
+
+
+.fade-two {
+    
+   
+    animation: fadeInAnimationTwo ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; 
+    opacity: 0;
+    
+}
+
+@keyframes fadeInAnimationThree { 
+    from { opacity:0; } 
+    to { opacity:1; } }
+
+
+.fade-three {
+    
+   
+    animation: fadeInAnimationTwo ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; 
+    opacity: 0;
+    
+}
+
+
+.products-header{
+    text-align: center;
+    font-family: 'Rambla', sans-serif;
+}
+
+.items-for-sale{
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.product-block{
+    background-color: white;
+    border-color: grey;
+    border-radius: 5px;
+    /* display:flex; */
+    padding: 60px;
+    margin: 20px;
+    /* width: 80%; */
+    /* position: relative; */
+}
+
+.payment-block{
+    background-color: white;
+    border-color: grey;
+    border-radius: 5px;
+    /* display:flex; */
+    /* padding: 60px; */
+    margin: 20px;
+    /* width: 80%; */
+    /* position: relative; */
+}
+
+.art-block{
+    background-color: #ECECEC;
+    padding: 40px;
+}
+
+.jumbotron {
+   margin-bottom: 0px;
+}
+
+.picture-placement {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 40px;
+    
+}
+
+#product-heading {
+    font-family: 'Rambla', sans-serif;
+    font-size: 34pt;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#product-description {
+    font-family: 'Rambla', sans-serif;
+    font-size: 15pt;
+    font-weight: normal;
+}
+
+
+/* Effect for button used taken from W3 schools https://www.w3schools.com/css/css3_buttons.asp */
+.button-add-to-cart {
+margin:auto;
+border-radius:2px;
+border:none; 
+background-color:#95c5e8;
+padding: 15px 32px;
+border-radius:2px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+opacity: 0.6;
+transition: 0.3s;
+cursor: pointer;
+}
+
+.button-add-to-cart:hover {opacity:1}
+
+
+/* the piece of form that changes the amount added to cart. */
+.quantity-selector{
+    width: 15%;
+    
+    border-radius:2px;
+    
+   
+    margin: 0;
+}
+
+
+
+/* properties for the cart table */
+/* gives the table for the cart a zebra stripe */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+.cart {
+    position:relative;
+    margin:auto;
+    width: 800px;
+    height:800px;
+    padding:20%;
+  }
+
+.item-name-left{
+    padding-left:30px;
+}
+
+
+
+.text-name-left{
+    padding-left:30px;
+}
+
+.text-price-right{
+    text-align:right;
+    padding-right:30px;
+}
+
+.item-price-right {
+    text-align:right;
+    padding-right:30px;
+}
+
+.price {
+    text-align: center;
+}
+
+.item-quantity-mid {
+    text-align:center;
+    padding-right:30px;
+}
+
+.text-quantity-mid {
+   text-align:center;
+   padding-right:30px;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
+  padding: 40px; 
+  margin-top: 15px;
+  width: 800px;
+  line-height: 300%; 
+}
+
+.form-container-right{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: -70px;
+    padding: 40px; 
+    margin-top: 15px;
+    width: 600px;
+    line-height: 300%; 
+}
+
+h4 {
+    color: #707070;
+}
+
+.form-container-delivery {    
+    margin: auto;
+    padding: 40px; 
+    margin-top: 15px;
+    width: 800px;
+    line-height: 300%; 
+}
+
+html, body {
+    min-height: 100vh;
+    position: relative;
+}
+
+#page-container {
+    position: relative;
+    min-height: calc(100vh - 78.53 - 64);
+    padding-bottom: 58px;
+  }
+  
+  .content-wrap {
+    /* min-height: 100%; */
+    height: auto !important;
+    /* height: 100%; */
+    margin:  auto ; /* the bottom margin is the negative value of the footer's height */
+    padding-bottom: 58px;
+  }
+
+  p {
+      color: #707070; 
+  }
+  
+  .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    /* padding: 40px;     */
+    
+    margin: auto;
+    background-color:#ECECEC;
+    color: black;
+    text-align: center;          /* Footer height */
+  }
+
+ 
+
+
+  .space {
+      width:100%;
+      height: 10%;
+  }
+
+  .intro {
+      padding:50px;
+  }
+
+  .intro_text {
+      text-align: center;
+      font-size: 45px !important;
+  }
+
+  h3 {
+      font-size: 45px;
+  }
