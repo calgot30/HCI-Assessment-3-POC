@@ -399,6 +399,16 @@ tr:nth-child(even) {
   line-height: 300%; 
 }
 
+.blog-container {
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px; 
+    margin-top: 15px;
+    width: 1200px;
+    line-height: 300%; 
+  }
+
 .form-container-right{
     background-color: white;
     border-radius: 5px;
